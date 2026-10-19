@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Karimulla Mohammod – Data Science, Image Processing and Machine Learning</title>
+<meta name="description" content="Portfolio of Karimulla Mohammod, MSc Data Science student at the University of Aberdeen. Python, OpenCV, machine learning and full-stack projects.">
+<style>
+:root{--bg:#f3f4f1;--ink:#23292b;--muted:#5b6569;--line:#d3d9d6;--accent:#1b6670}
+@media (prefers-color-scheme:dark){:root{--bg:#15181a;--ink:#e7ebe9;--muted:#9ba6a9;--line:#2a3133;--accent:#6fc2cb}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:1rem/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:4rem 1.25rem 3rem}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:700;line-height:1.2;margin:0}
+h1{font-size:clamp(2.4rem,7vw,3.6rem);letter-spacing:-.02em}
+h2{font-size:1.4rem;padding-top:1.1rem;border-top:1px solid var(--line);margin-bottom:1.4rem}
+h3{font-size:1.1rem}
+section{margin-top:3.5rem}
+p{margin:.5rem 0}
+a{color:var(--accent);text-underline-offset:.2em}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.lead{font-family:Georgia,serif;font-size:clamp(1.2rem,3.2vw,1.5rem);line-height:1.5;margin-top:1.2rem;max-width:36rem;border-left:4px solid var(--accent);padding-left:1rem}
+.links{display:flex;flex-wrap:wrap;gap:.5rem 1.4rem;margin-top:1.6rem;font-weight:600}
+.muted{color:var(--muted)}
+.small{font-size:.92rem}
+.row{display:grid;grid-template-columns:9rem 1fr;gap:.25rem 1.5rem;margin-bottom:1.6rem}
+.row .when{color:var(--muted);font-size:.92rem;padding-top:.2rem}
+.proj{margin-bottom:1.9rem}
+.proj h3 a{color:inherit}
+.tech{color:var(--muted);font-size:.92rem;margin:.15rem 0 .4rem}
+ul{margin:.4rem 0 0;padding-left:1.2rem}
+li{margin:.2rem 0}
+dl{margin:0}
+dt{font-weight:600;margin-top:.9rem}
+dd{margin:.1rem 0 0;color:var(--muted)}
+footer{margin-top:4rem;padding-top:1.1rem;border-top:1px solid var(--line);font-size:.9rem;color:var(--muted)}
+@media (max-width:36rem){.row{grid-template-columns:1fr}main{padding-top:2.5rem}}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>Karimulla Mohammod</h1>
+  <p class="lead">MSc Data Science student at the University of Aberdeen. I build image processing and machine learning pipelines in Python.</p>
+  <div class="links">
+    <a href="https://github.com/kareem09786">GitHub</a>
+    <a href="https://linkedin.com/in/karimulla-mohammod">LinkedIn</a>
+    <a href="mailto:k.mohammod.25@abdn.ac.uk">k.mohammod.25@abdn.ac.uk</a>
+  </div>
+</header>
+
+<section id="about">
+  <h2>About</h2>
+  <p>I’m a Python programmer who implements algorithms from pseudo-code and builds image processing and CNN pipelines with OpenCV. Before moving to Aberdeen I worked on SAP BASIS automation at Tata Consultancy Services and on software testing at F5 Networks. I now study full time and work in retail alongside my degree.</p>
+  <p>I’m based in Aberdeen, UK, and looking for internships and graduate roles in data science, image analysis and data analysis.</p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <article class="proj">
+    <h3>Etched wafer quality scoring</h3>
+    <p class="tech">Python, OpenCV, NumPy, scikit-learn, Matplotlib. Sep 2026 to present.</p>
+    <p>Generates simulated etched wafer images with controlled faults such as bent channels, uneven widths and rounded corners. Thresholding, edge detection and Hough line detection measure channel straightness and squareness, and the measures combine into one score per wafer.</p>
+    <p>Reached 93.3% accuracy and 0.955 ROC AUC on 240 held-out simulated test images, evaluated with confusion matrices and ROC curves.</p>
+  </article>
+
+  <article class="proj">
+    <h3><a href="https://github.com/kareem09786/Grocery-Application-using-Full-Stack">Grocery store management app</a></h3>
+    <p class="tech">Python, Flask, MySQL, HTML, CSS, JavaScript.</p>
+    <p>A full-stack web app for a grocery store. A Flask REST API backed by MySQL handles products, units of measure and orders, and a browser dashboard lets staff manage products and create orders.</p>
+  </article>
+
+  <article class="proj">
+    <h3><a href="https://github.com/kareem09786/Mask-recognition-using-Convolutional-Neural-Network">Face mask detection with a CNN</a></h3>
+    <p class="tech">Python, TensorFlow, Keras, OpenCV.</p>
+    <p>A convolutional network that classifies photos as masked or unmasked. Trained on 1,376 labelled images and reached 96.7% training accuracy, with a stopping callback to end training once accuracy passed 95%.</p>
+  </article>
+
+  <article class="proj">
+    <h3><a href="https://github.com/kareem09786/Fashion-Product-Classification-using-FMNIST-dataset">Fashion-MNIST classifier</a></h3>
+    <p class="tech">Python, TensorFlow, Keras.</p>
+    <p>A neural network that recognises ten clothing categories from 28×28 greyscale images. Reached 87.2% accuracy on the test set after five epochs.</p>
+  </article>
+
+  <article class="proj">
+    <h3>Handwritten prescription parsing</h3>
+    <p class="tech">Python, BioBERT, CRF, Streamlit. Final year project, Apr 2024.</p>
+    <p>An NLP pipeline over 5,000+ medical records that combines BioBERT with Conditional Random Fields for named entity recognition, reaching 88% accuracy across 10+ experimental runs. A Streamlit dashboard for non-technical users cut manual review time by about 20%.</p>
+  </article>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+
+  <div class="row">
+    <div class="when">Jul 2026 to present</div>
+    <div>
+      <h3>Retail Assistant, Primark</h3>
+      <p class="muted small">Aberdeen, UK</p>
+      <p>Keeps sales floor sections organised and replenished during busy trading periods, resolves customer queries, and balances shifts alongside full-time study.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="when">May 2025 to Dec 2025</div>
+    <div>
+      <h3>Assistant System Engineer (Trainee), Tata Consultancy Services</h3>
+      <p class="muted small">Bangalore, India</p>
+      <ul>
+        <li>Automated SAP BASIS health checks and monitoring scripts, cutting manual intervention by 40% with 99.9%+ availability.</li>
+        <li>Wrote and maintained 20+ technical guidance documents covering process steps, configuration standards and troubleshooting.</li>
+        <li>Worked with teams across 3 business units and administered access and security for 500+ users.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="when">Feb 2025 to Apr 2025</div>
+    <div>
+      <h3>Apprentice Software Engineer (Testing), F5 Networks</h3>
+      <p class="muted small">Hyderabad, India</p>
+      <ul>
+        <li>Ran automation and functional tests on load-balancing products, with zero critical defects after deployment.</li>
+        <li>Expanded test coverage by 25% and documented 30+ defects with clear reproduction steps for developers.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+
+  <div class="row">
+    <div class="when">Jan 2026 to present</div>
+    <div>
+      <h3>MSc Data Science, University of Aberdeen</h3>
+      <p>Merit in all four first-term modules, including Machine Learning and Introduction to Programming. Coursework covers spectral analysis, filtering, cross-correlation, k-nearest neighbours, clustering and ROC curve evaluation, with current modules in Image Analysis, Data Visualisation and Advanced Statistics.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="when">Jan 2021 to May 2024</div>
+    <div>
+      <h3>B.Tech Computer Science and Engineering, JNTU Kakinada</h3>
+      <p>CGPA 8.14 / 10. AI and ML modules in computer vision, convolutional neural networks, feature extraction and model evaluation.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <dl>
+    <dt>Image processing and machine learning</dt>
+    <dd>OpenCV, NumPy, thresholding, edge detection, Hough transforms, CNNs, TensorFlow, Keras, scikit-learn, model evaluation</dd>
+    <dt>Programming and tools</dt>
+    <dd>Python, Java, SQL, JavaScript, Git, GitHub, Linux, Matplotlib</dd>
+    <dt>Testing and documentation</dt>
+    <dd>Automation testing, validation against known faults, technical documentation, reporting, Agile</dd>
+    <dt>Certifications</dt>
+    <dd>SAP System Administrator (SAP), Cybersecurity Essentials (Cisco)</dd>
+  </dl>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>The best way to reach me is by email at <a href="mailto:k.mohammod.25@abdn.ac.uk">k.mohammod.25@abdn.ac.uk</a>, or on <a href="https://linkedin.com/in/karimulla-mohammod">LinkedIn</a>.</p>
+</section>
+
+<footer>© 2026 Karimulla Mohammod. Aberdeen, UK.</footer>
+</main>
+</body>
+</html>
